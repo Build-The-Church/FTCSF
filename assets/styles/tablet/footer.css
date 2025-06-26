@@ -1,0 +1,22 @@
+.footer-menu--mobile {
+	display: none;
+}
+
+.footer-menu--desktop {
+	display: block;
+}
+
+.footer-menu__list {
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.footer-menu__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-menu svg {
+	display: none;
+}
