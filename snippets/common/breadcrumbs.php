@@ -10,7 +10,7 @@
 				<?php $breadcrumb_element = (array_key_last($steps) == $index) ? 'span' : 'a'; ?>
 				<?php $step_link = church_get_general_url($step['type'], $step['slug'], array_key_exists('prefix_type', $step) ? $step['prefix_type'] : false, array_key_exists('prefix_slug', $step) ? $step['prefix_slug'] : false); ?>
 				<?php $classes = 'breadcrumbs__item'; ?>
-				<?php if (array_key_last($steps) == $index) { $classes .= ' desktop-only'; } ?>
+				<?php if (array_key_last($steps) == $index) { $classes .= ' desktop-only-flex'; } ?>
 				<li class="<?= $classes ?>">
 					<<?= $breadcrumb_element ?> href="<?= get_site_url(); ?><?= $step_link['url'] ?>">
 						<?= $step_link['text'] ?>

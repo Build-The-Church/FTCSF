@@ -31,7 +31,7 @@
 .flex-grid {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	column-gap: var(--sermon-archive-col-gap);
 	row-gap: var(--sermon-archive-row-gap);
@@ -42,6 +42,7 @@
 	flex-shrink: 0;
 }
 
+.desktop-only-flex,
 .desktop-only {
 	display: none;
 }

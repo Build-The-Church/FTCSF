@@ -1,12 +1,22 @@
 <?php
 
 $archive_type = get_queried_object()->name;
-$archive_page = get_page_by_path($archive_type);
+$archive_pages = get_posts(array(
+	'post_type' => 'page',
+	'name' => $archive_type,
+	'numberposts' => 1
+));
+$archive_page = count($archive_pages) > 0 ? $archive_pages[0] : false;
+
 $image = util_get_hero_src($archive_page);
 
-$steps = array(
-	array('type' => $archive_type, 'slug' => false)
-);
+$steps = array();
+if ($archive_page->post_parent) {
+	$parent_page = $archive_page->post_parent;
+	$parent_post = get_post($parent_page);
+	$steps[0] = array('type' => 'page', 'slug' => $parent_post->post_name);
+}
+$steps[] = array('type' => $archive_type, 'slug' => false);
 
 if ($archive_page) {
 	$page_id = $archive_page->ID;

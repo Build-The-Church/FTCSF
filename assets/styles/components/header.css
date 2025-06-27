@@ -150,7 +150,9 @@ body:not(.body-scrolled, .search-open) .header--transparent {
 }
 
 .header__mobile-menu .main-menu {
+	margin-top: 3rem;
 	flex-direction: column;
+	gap: 1rem;
 }
 
 .main-menu > .main-menu__item {
@@ -223,3 +225,17 @@ body:not(.body-scrolled, .search-open) .header--transparent {
 	max-height: 100vh;
 }
 
+.accordion-menu__item .summary-select {
+	border: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.accordion-menu__sub-menu {
+	padding-left: 1rem;
+	list-style-type: none;
+}
+
+.accordion-menu__sub-menu .accordion-menu__item {
+	margin-top: 0.5rem;
+}

@@ -1,7 +1,11 @@
 blockquote.wp-block-quote {
 	position: relative;
+	margin-left: auto !important;
+	margin-right: auto !important;
 	border-left: 0;
 	padding-top: 5rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
 	padding-bottom: 2rem;
 	max-width: var(--blockquote-max-width);
 	line-height: 1.4;

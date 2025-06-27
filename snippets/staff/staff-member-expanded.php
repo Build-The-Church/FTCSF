@@ -5,17 +5,15 @@
 ?>
 
 <div class="staff-member staff-member--expanded staff-member--<?= $image_layout ?>">
-	<a href="<?= get_site_url() ?>/staff/<?= $staff->post_name ?>">
-		<img src="<?= $staff_img ?>"
-			 alt="<?= $staff->post_title ?>"
-			 class="staff-member__image" />
-	</a>
+	<img src="<?= $staff_img ?>"
+		 alt="<?= $staff->post_title ?>"
+		 class="staff-member__image" />
 	<span class="staff-member__content">
-		<a href="<?= get_site_url() ?>/staff/<?= $staff->post_name ?>">
+		<p class="text-large">
 			<?= $staff->post_title ?>
-		</a>
-		<span>
-			<?= $staff->post_excerpt ?>
-		</span>
+		</p>
+		<div class="text-small text-justify">
+			<?= $staff->post_content ?>
+		</div>
 	</span>
 </div>

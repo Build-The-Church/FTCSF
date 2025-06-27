@@ -1,7 +1,9 @@
 <?php
     $staffPosts = get_posts(array(
         'post_type' => 'staff',
-        'post__in' => explode(',', $staff_ids)
+        'post__in' => explode(',', $staff_ids),
+        'order_by' => 'ID',
+        'order' => 'ASC'
     ));
 ?>
 
