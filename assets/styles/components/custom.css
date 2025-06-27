@@ -1,0 +1,25 @@
+.wp-block-cover:has(a) img {
+	transform: scale(1.0);
+	transition: 0.3s;
+}
+
+.wp-block-cover:has(a:hover) img {
+	transform: scale(1.05);
+}
+
+.wp-block-details summary {
+	font-size: 1.4rem;
+	font-weight: 600; 
+}
+
+.wp-block-details:not(:last-of-type) {
+	margin-bottom: 0;
+}
+
+.wp-block-details + .wp-block-details {
+	border-top: 0;
+}
+
+.gbc ul {
+	padding-left: 2.5rem;
+}
