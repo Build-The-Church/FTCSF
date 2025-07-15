@@ -15,6 +15,12 @@ $image_id = get_post_thumbnail_id($frontpage);
 $image_src = $image_id ? wp_get_attachment_image_src($image_id, 'full', false)[0] : false;
 $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : 'View Search Results';
 
+add_filter('breadcrumbs_steps', function ($steps) use ($post) {
+	return array(
+		array('type' => 'search', 'slug' => false),
+	);
+});
+
 util_render_snippet('common/hero', array(
 	'desktop_src' => $image_src,
 	'image_alt' => $hero_image['alt'],
