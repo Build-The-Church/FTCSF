@@ -9,6 +9,10 @@
 	color: inherit;
 }
 
+.footer a:hover {
+	color: var(--footer-link-hover);
+}
+
 .footer ul {
 	list-style: none;
 }
@@ -36,7 +40,7 @@
 	color: var(--copyright-text);
 }
 
-.social-links {
+.social-links:has(.social-link) {
 	margin-bottom: var(--footer-padding);
 	display: flex;
 	justify-content: center;

@@ -7,8 +7,9 @@
 }
 
 .footer-menu__list {
-	display: grid;
-	grid-template-columns: repeat(var(--columns), 1fr);
+	display: flex;
+	justify-content: center;
+	column-gap: 4rem;
 }
 
 .footer-menu__item {

@@ -91,6 +91,7 @@
 	--footer-pattern-width: <?= get_option('church_footer_pattern_width', 25) ?>%;
 	--footer-background: var(<?= get_option('css_footer_background') ?>);
 	--footer-text: var(<?= get_option('css_footer_text') ?>);
+	--footer-link-hover: var(<?= get_option('css_footer_link_hover') ?>);
 	--copyright-background: var(<?= get_option('css_copyright_background') ?>);
 	--copyright-text: var(<?= get_option('css_copyright_text') ?>);
 

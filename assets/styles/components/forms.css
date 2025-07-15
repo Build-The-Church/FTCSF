@@ -11,6 +11,15 @@
 	row-gap: 0.5rem;
 	width: 30rem;
 	max-width: 100%;
+	font-size: 0;
+}
+
+.input-wrapper.input-wrapper__horizontal {
+	margin-bottom: 1rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.75rem;
 }
 
 .input-wrapper input {
@@ -60,6 +69,7 @@ textarea {
 }
 
 label {
+	font-size: 1rem;
 	color: var(--label-color);
 	cursor: pointer;
 }
@@ -77,4 +87,15 @@ input[type="checkbox"]:checked {
 	border-color: var(--button-border-hover);
     background-color: var(--button-background-hover);
     color: var(--button-text-hover);
+}
+
+select {
+	border: var(--button-border-width, 1px) solid var(--button-border);
+	border-radius: 3px;
+	padding: 0.1rem 0.75rem 0.1rem 0.2rem;
+	font-size: 1rem;
+	background: var(--button-background);
+	color: var(--button-text);
+	cursor: pointer;
+	transition: all 0.3s;
 }

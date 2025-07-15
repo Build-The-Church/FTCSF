@@ -36,15 +36,6 @@ body {
 	left: 0;
 }
 
-a {
-	color: var(--link);
-	transition: color .2s;
-}
-
-a:hover {
-	color: var(--link-hover);
-}
-
 summary::marker {
 	content: '';
 	display: none;

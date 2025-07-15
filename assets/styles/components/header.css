@@ -231,6 +231,14 @@ body:not(.body-scrolled, .search-open) .header--transparent {
 	padding-right: 0;
 }
 
+.accordion-menu__item .summary-select svg {
+	transition: transform 0.2s;
+}
+
+.accordion-menu__item .summary-select[open] svg {
+	transform: scaleY(-1);
+}
+
 .accordion-menu__sub-menu {
 	padding-left: 1rem;
 	list-style-type: none;

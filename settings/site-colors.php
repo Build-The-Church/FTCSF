@@ -183,6 +183,12 @@ add_action('customize_register', function ($customizer) {
 			'section' => 'church_footer_section'
 		),
 		array(
+			'id' => 'footer_link_hover',
+			'default' => '--off-white',
+			'label' => 'Footer Link Hover',
+			'section' => 'church_footer_section'
+		),
+		array(
 			'id' => 'copyright_background',
 			'default' => '--black',
 			'label' => 'Copyright Background',
