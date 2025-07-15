@@ -13,20 +13,15 @@
 			'wrapper_classes' => 'card__image-wrap',
 			'extra_classes' => 'card__image',
 			'src' => $image_info['src'],
-			'alt' => $image_info['alt']
+			'alt' => $image_info['alt'] ? $image_info['alt'] : $post->post_title
 		), false); ?>
 	</a>
 
 	<div class="<?= $card_content_classes ?>">
 		<a href="<?= get_permalink($post) ?>">
-			<h2>
+			<p class="text-large">
 				<?= $post->post_title ?>
-			</h2>
+			</p>
 		</a>
-		<?php if ($post->post_excerpt) { ?>
-			<div>
-				<?= $post->post_excerpt ?>
-			</div>
-		<?php } ?>
 	</div>
 </article>

@@ -12,12 +12,13 @@
 ?>
 
 <button data-open-mobile-menu
-		class="mobile-only button button--icon">
+		class="mobile-only button button--icon"
+		aria-label="Open Menu">
 	<?= util_render_snippet('icons/menu', array(), false) ?>
 </button>
 <div class="header__mobile-wrapper ccontain" data-mobile-menu>
 	<button class="header__close-menu" 
-			aria-name="close mobile menu"
+			aria-label="close mobile menu"
 			data-close-mobile-menu>
 	</button>
 	<?php wp_nav_menu([

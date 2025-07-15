@@ -7,6 +7,10 @@
   background: var(--white);
 }
 
+section.search-results {
+  margin-top: 2rem;
+}
+
 .search-results__title {
   padding: 3rem 0rem 1rem;
   text-align: center;

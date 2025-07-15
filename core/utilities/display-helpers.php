@@ -6,7 +6,6 @@ function util_render_date ($date) {
 }
 
 function util_get_hero_src ($post) {
-	$post_id = $post->ID;
 	$image_id = get_post_thumbnail_id($post);
 	$image_src = $image_id ? wp_get_attachment_image_src($image_id, 'full', false)[0] : false;
 

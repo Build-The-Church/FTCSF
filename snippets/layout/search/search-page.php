@@ -1,13 +1,10 @@
 <section class="ccontain search-results">
-	<h1 class="search-results__title">
-		Showing <?= $the_query->found_posts ?> Results For "<?= $the_query->query['s'] ?>"
-	</h1>
-
 	<form class="search-form"
 		  method="GET"
 		  action="<?= get_site_url() ?>">
 		<div class="ccontain">
-			<input name="s" type="text" value="<?= $the_query->query['s'] ?>" />
+			<label for="s">Search For</label>
+			<input id="s" name="s" type="text" value="<?= $the_query->query['s'] ?>" />
 			<input type="submit" value="Search" />
 		</div>
 	</form>

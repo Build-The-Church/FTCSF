@@ -14,6 +14,7 @@ add_action( 'init', function () {
 			'public' => true,
 			'has_archive' => true,
 			'show_in_rest' => true,
+			'exclude_from_search' => true,
 			'menu_icon' => 'dashicons-businessperson',
 			'supports' => ['title', 'editor', 'custom-fields', 'thumbnail', 'excerpt'],
 			'auth_callback' => function() {

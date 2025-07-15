@@ -31,11 +31,17 @@
 		<?php util_render_snippet('/layout/global/main-menu', array(), false); ?>
 		<button aria-label="Open Search Form"
 				class="header__search-trigger"
-				onclick="window.setState('searchOpen', !window.getState('searchOpen'))">
+				<?php if (is_search()) { ?>
+					onclick="document.querySelector('#s').focus()"
+				<?php } else { ?>
+					onclick="window.setState('searchOpen', !window.getState('searchOpen'))"
+				<?php } ?>>
 			<?= util_render_snippet('icons/search', array(
 				'classes' => 'header__search-trigger-icon'
 			)) ?>
 		</button>
 	</div>
-	<?= util_render_snippet('layout/global/search') ?>
+	<?php if (!is_search()) { ?>
+		<?= util_render_snippet('layout/global/search') ?>
+	<?php } ?>
 </header>
